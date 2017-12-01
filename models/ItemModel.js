@@ -23,8 +23,10 @@ const ItemModel = {
                     },
                     "picture": item.thumbnail,
                     "condition": item.condition,
-                    "free_shipping": item.shipping.free_shipping
-                }
+                    "free_shipping": item.shipping.free_shipping,
+                    "sold_quantity": item.sold_quantity,
+                    "description": item_desc.plain_text
+                },
             })
         })
         .catch(e => reject(e))        
