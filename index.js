@@ -1,5 +1,7 @@
 const express = require('express')
 const app = express()
+const cors = require('cors')
+app.use(cors())
 
 const fs = require('fs')
 const PORT = fs.readFileSync('./.env', { encoding: 'utf8' })
